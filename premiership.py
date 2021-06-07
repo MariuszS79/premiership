@@ -11,5 +11,17 @@ crystal_palace=["Crystal Palace", 0, 0, 0, 0, 0, 0, 0, 0]
 everton=["Everton", 0, 0, 0, 0, 0, 0, 0, 0]
 leeds_united=["Leeds United", 0, 0, 0, 0, 0, 0, 0, 0]
 leicester_city=["Leicester City", 0, 0, 0, 0, 0, 0, 0, 0]
+liverpool=["Liverpool", 0, 0, 0, 0, 0, 0, 0, 0]
+manchester_city=["Manchester City", 0, 0, 0, 0, 0, 0, 0, 0]
+manchester_united=["Manchester United", 0, 0, 0, 0, 0, 0, 0, 0]
+newcastle_united=["Newcastle United", 0, 0, 0, 0, 0, 0, 0, 0]
+norwich_city=["Norwich City", 0, 0, 0, 0, 0, 0, 0, 0]
+southampton=["Southampton", 0, 0, 0, 0, 0, 0, 0, 0]
+tottenham=["Tottenham", 0, 0, 0, 0, 0, 0, 0, 0]
+watford=["Watford", 0, 0, 0, 0, 0, 0, 0, 0]
+west_ham=["West Ham", 0, 0, 0, 0, 0, 0, 0, 0]
+wolves=["Wolves", 0, 0, 0, 0, 0, 0, 0, 0]
 
-print(tabulate([arsenal, aston_villa, brentford, brighton, burnley], headers=["Club", "MP", "W", "D", "L", "GF", "GA", "GD", "Pts"], tablefmt='orgtbl'))
+teams=[arsenal, aston_villa, brentford, brighton, burnley, chelsea, crystal_palace, everton, leeds_united, leicester_city, liverpool, manchester_city, manchester_united, newcastle_united, norwich_city, southampton, tottenham, watford, west_ham, wolves]
+
+print(tabulate(teams, headers=["Club", "MP", "W", "D", "L", "GF", "GA", "GD", "Pts"], tablefmt="grid"))
