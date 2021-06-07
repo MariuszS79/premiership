@@ -24,4 +24,4 @@ wolves=["Wolves", 0, 0, 0, 0, 0, 0, 0, 0]
 
 teams=[arsenal, aston_villa, brentford, brighton, burnley, chelsea, crystal_palace, everton, leeds_united, leicester_city, liverpool, manchester_city, manchester_united, newcastle_united, norwich_city, southampton, tottenham, watford, west_ham, wolves]
 
-print(tabulate(teams, headers=["Club", "MP", "W", "D", "L", "GF", "GA", "GD", "Pts"], tablefmt="grid"))
+print(tabulate(teams, headers=["Club", "MP", "W", "D", "L", "GF", "GA", "GD", "Pts"], tablefmt="grid", numalign="center"))
