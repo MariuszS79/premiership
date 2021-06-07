@@ -1,4 +1,5 @@
 from tabulate import tabulate
+import random
 
 headers=["Club", "MP", "W", "D", "L", "GF", "GA", "GD", "Pts"]
 arsenal=["Arsenal", 0, 0, 0, 0, 0, 0, 0, 0]
@@ -24,4 +25,8 @@ wolves=["Wolves", 0, 0, 0, 0, 0, 0, 0, 0]
 
 teams=[arsenal, aston_villa, brentford, brighton, burnley, chelsea, crystal_palace, everton, leeds_united, leicester_city, liverpool, manchester_city, manchester_united, newcastle_united, norwich_city, southampton, tottenham, watford, west_ham, wolves]
 
-print(tabulate(teams, headers=["Club", "MP", "W", "D", "L", "GF", "GA", "GD", "Pts"], tablefmt="grid", numalign="center"))
+score=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 7]
+
+print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], tablefmt="fancy_grid", numalign="center"))
+
+print((random.choice(score)),":",(random.choice(score)))
