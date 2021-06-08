@@ -50,4 +50,5 @@ while game:
     print ("Welcome to",(season), "season")
     print ("Round",round,"of 38")
     print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], tablefmt="fancy_grid", numalign="center"))
+    print("Results of round",round,"are: ")
     game=False
