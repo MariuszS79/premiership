@@ -31,5 +31,11 @@ print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD",
 
 print((random.choice(score)),":",(random.choice(score)))
 
-season=True
-while season:
+round=0
+season_p1=2021
+season_p2=2022
+season=str(season_p1)+"/"+str(season_p2)
+
+print(season)
+game=True
+#while game:
