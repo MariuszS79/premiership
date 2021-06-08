@@ -27,7 +27,7 @@ teams=[arsenal, aston_villa, brentford, brighton, burnley, chelsea, crystal_pala
 
 score=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 7]
 
-print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], tablefmt="fancy_grid", numalign="center"))
+
 
 print((random.choice(score)),":",(random.choice(score)))
 
@@ -36,6 +36,9 @@ season_p1=2021
 season_p2=2022
 season=str(season_p1)+"/"+str(season_p2)
 
-print(season)
+
 game=True
-#while game:
+while game:
+    print ("Welcome to",(season), "season")
+    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], tablefmt="fancy_grid", numalign="center"))
+    game=False
