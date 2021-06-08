@@ -48,7 +48,11 @@ game=True
 while game:
     round=round+1
     print ("Welcome to",(season), "season")
-    print ("Round",round,"of 38")
-    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], tablefmt="fancy_grid", numalign="center"))
-    print("Results of round",round,"are: ")
+    for i in range(37):
+        round = round + 1
+
+        print ("Round",round,"of 38")
+        print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], tablefmt="fancy_grid", numalign="center"))
+        print("Results of round",round,"are: ")
+        print("--------------------")
     game=False
