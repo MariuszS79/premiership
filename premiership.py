@@ -49,7 +49,8 @@ def random_teams():
     group_a=teams[:10]
     group_b=teams[10:]
 
-def fixtures()
+def fixtures():
+    
 
 
 
