@@ -53,7 +53,9 @@ def fixtures():
     global group_a
     global group_b
     global rnd1
-    rnd1=[[group_a[0][0], group_b[-1][0]], [group_b[-2][0], group_a[1][0]], [group_a[2][0], group_b[-3][0]]]
+    rnd1=[[group_a[0][0], group_b[-1][0]], [group_b[-2][0], group_a[1][0]], [group_a[2][0], group_b[-3][0]],
+          [group_b[-4][0], group_a[3][0]], [group_a[4][0], group_b[-5][0]]]
+    print("----------\nRound 1")
     for i in rnd1:
         print(*i, sep="   vs   ")
 
