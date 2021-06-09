@@ -50,7 +50,9 @@ def random_teams():
     group_b=teams[10:]
 
 def fixtures():
-    
+    global group_a
+    global group_b
+    group_a
 
 
 
