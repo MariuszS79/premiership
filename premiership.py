@@ -27,14 +27,14 @@ teams=[arsenal, aston_villa, brentford, brighton, burnley, chelsea, crystal_pala
 
 score=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 7]
 
-random_teams=random.shuffle(teams)
+
 
 #print(random_teams)
-for i in teams:
-    print (i[0])
+#for i in teams:
+ #   print (i[0])
 
 
-print((random.choice(score)),":",(random.choice(score)))
+#print((random.choice(score)),":",(random.choice(score)))
 
 round=0
 
@@ -42,8 +42,19 @@ season_p1=2021
 season_p2=2022
 season=str(season_p1)+"/"+str(season_p2)
 
+def random_teams():
+    random.shuffle(teams)
+    group_a=teams[:10]
+    group_b=teams[10:]
+    print("\ngroup a:")
+    for i in group_a:
+        print(i[0])
+    print("\ngroup b:")
+    for i in group_b:
+        print(i[0])
 
-
+random_teams()
+"""
 game=True
 while game:
     round=round+1
@@ -56,3 +67,4 @@ while game:
         print("Results of round",round,"are: ")
         print("--------------------")
     game=False
+"""
