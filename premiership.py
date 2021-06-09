@@ -43,15 +43,15 @@ season_p2=2022
 season=str(season_p1)+"/"+str(season_p2)
 
 def random_teams():
+    global group_a
+    global group_b
     random.shuffle(teams)
     group_a=teams[:10]
     group_b=teams[10:]
-    print("\ngroup a:")
-    for i in group_a:
-        print(i[0])
-    print("\ngroup b:")
-    for i in group_b:
-        print(i[0])
+
+def fixtures()
+
+
 
 random_teams()
 """
