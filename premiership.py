@@ -52,11 +52,13 @@ def random_teams():
 def fixtures():
     global group_a
     global group_b
-    group_a
-
-
+    global rnd1
+    rnd1=[[group_a[0][0], group_b[-1][0]]]
+    print(rnd1)
 
 random_teams()
+fixtures()
+
 """
 game=True
 while game:
