@@ -1,7 +1,6 @@
 from tabulate import tabulate
 import random
 
-
 headers=["Club", "MP", "W", "D", "L", "GF", "GA", "GD", "Pts"]
 arsenal=["Arsenal", 0, 0, 0, 0, 0, 0, 0, 0]
 aston_villa=["Aston Villa", 0, 0, 0, 0, 0, 0, 0, 0]
