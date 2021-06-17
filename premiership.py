@@ -133,3 +133,4 @@ while game:
           print((random.choice(score)),":",(random.choice(score)))
         print("--------------------")
     game=False
+
