@@ -129,8 +129,10 @@ while game:
         print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], tablefmt="fancy_grid", numalign="center"))
         print("Results of round",round,"are: ")
         for i in rnd1:
-          print(i[0][0], i[1][0], sep="   vs   ")
-          print((random.choice(score)),":",(random.choice(score)))
+            score1=(random.choice(score))
+            score2=(random.choice(score))
+            print(i[0][0], i[1][0], sep="   vs   ")
+            print(score1,":",score2)
         print("--------------------")
     game=False
 
