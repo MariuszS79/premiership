@@ -173,7 +173,7 @@ while game:
         print(i[0][0], i[1][0], sep="   vs   ")
         print(score1,":",score2)
     print("\nTable after round", round)
-    teams.sort(key=lambda team: team[8], reverse=True)
+    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
     print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"],
                        ))
     input("Hit enter to start next round")
@@ -182,7 +182,7 @@ while game:
     round = round + 1
     print("\nRound", round, "of 38")
     print("Results of round", round, "are: ")
-    for i in rnd1:
+    for i in rnd2:
         score1 = (random.choice(score))
         score2 = (random.choice(score))
         mp()
@@ -191,7 +191,7 @@ while game:
         print(i[0][0], i[1][0], sep="   vs   ")
         print(score1, ":", score2)
     print("\nTable after round", round)
-    teams.sort(key=lambda team: team[8], reverse=True)
+    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
     print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
     print("--------------------")
 
