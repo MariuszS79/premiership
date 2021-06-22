@@ -43,7 +43,7 @@ season_p2=2022
 season=str(season_p1)+"/"+str(season_p2)
 
 
-
+#setting fixtures
 def fixtures():
     global group_a
     global group_b
@@ -118,8 +118,48 @@ def fixtures():
             [group_b[9], group_a[-5]], [group_a[-4], group_b[8]], [group_b[7], group_a[-3]],
             [group_a[-2], group_b[6]], [group_b[5], group_a[-1]], [group_a[1], group_b[4]],
             [group_b[3], group_a[2]]]
-    print("----------\nRound 7\n----------")
+    print("----------\nRound 8\n----------")
     for i in rnd8:
+        print(i[0][0], i[1][0], sep="   vs   ")
+
+    rnd9 = [[group_a[0], group_b[-9]], [group_b[-10], group_a[-8]], [group_a[-7], group_b[9]],
+            [group_b[8], group_a[-6]], [group_a[-5], group_b[7]], [group_b[6], group_a[-4]],
+            [group_a[-3], group_b[5]], [group_b[4], group_a[-2]], [group_a[-1], group_b[3]],
+            [group_b[2], group_a[1]]]
+    print("----------\nRound 9\n----------")
+    for i in rnd9:
+        print(i[0][0], i[1][0], sep="   vs   ")
+
+    rnd10 = [[group_a[0], group_b[-10]], [group_b[9], group_a[-9]], [group_a[-8], group_b[8]],
+            [group_b[7], group_a[-7]], [group_a[-6], group_b[6]], [group_b[5], group_a[-5]],
+            [group_a[-4], group_b[4]], [group_b[3], group_a[-3]], [group_a[-2], group_b[2]],
+            [group_b[1], group_a[-1]]]
+    print("----------\nRound 10\n----------")
+    for i in rnd10:
+        print(i[0][0], i[1][0], sep="   vs   ")
+
+    rnd11 = [[group_a[0], group_b[9]], [group_b[8], group_a[-10]], [group_a[-9], group_b[7]],
+             [group_b[6], group_a[-8]], [group_a[-7], group_b[5]], [group_b[4], group_a[-6]],
+             [group_a[-5], group_b[3]], [group_b[2], group_a[-4]], [group_a[-3], group_b[1]],
+             [group_b[-1], group_a[-2]]]
+    print("----------\nRound 11\n----------")
+    for i in rnd11:
+        print(i[0][0], i[1][0], sep="   vs   ")
+
+    rnd12 = [[group_a[0], group_b[8]], [group_b[7], group_a[9]], [group_a[-10], group_b[6]],
+             [group_b[5], group_a[-9]], [group_a[-8], group_b[4]], [group_b[3], group_a[-7]],
+             [group_a[-6], group_b[2]], [group_b[1], group_a[-5]], [group_a[-4], group_b[-1]],
+             [group_b[-2], group_a[-3]]]
+    print("----------\nRound 12\n----------")
+    for i in rnd12:
+        print(i[0][0], i[1][0], sep="   vs   ")
+
+    rnd13 = [[group_a[0], group_b[7]], [group_b[6], group_a[8]], [group_a[9], group_b[5]],
+             [group_b[4], group_a[-10]], [group_a[-9], group_b[3]], [group_b[2], group_a[-8]],
+             [group_a[-7], group_b[1]], [group_b[-1], group_a[-6]], [group_a[-5], group_b[-2]],
+             [group_b[-3], group_a[-4]]]
+    print("----------\nRound 13\n----------")
+    for i in rnd13:
         print(i[0][0], i[1][0], sep="   vs   ")
 
 
@@ -209,9 +249,26 @@ while game:
     print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
     print("--------------------")
 
+    # round 3
+    round = round + 1
+    print("\nRound", round, "of 38")
+    print("Results of round", round, "are: ")
+    for i in rnd3:
+        score1 = (random.choice(score))
+        score2 = (random.choice(score))
+        mp()
+        wld_pts()
+        gf_ga_gd()
+        print(i[0][0], i[1][0], sep="   vs   ")
+        print(score1, ":", score2)
+    print("\nTable after round", round)
+    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
+    print("--------------------")
+
 
     #winner on end of the season
-    print (teams[0][0])
+    print ("Winner of the season is: ",(teams[0][0]))
     game=False
 
 
