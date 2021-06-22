@@ -146,26 +146,41 @@ def wld_pts():
 game=True
 while game:
     round=0
-    print ("Welcome to",(season), "season\n")
-    for i in range(1):
-        round = round + 1
-
-        print ("Round",round,"of 38")
+    print ("\nWelcome to",(season), "season\n")
         #print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], tablefmt="fancy_grid", numalign="center"))
-        print("Results of round",round,"are: ")
-        for i in rnd1:
-            score1=(random.choice(score))
-            score2=(random.choice(score))
-            i[0][5]=i[0][5]+score1
-            i[1][5]=i[1][5]+score2
-            mp()
-            wld_pts()
 
-            print(i[0][0], i[1][0], sep="   vs   ")
-            print(score1,":",score2)
-        print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"],
-                       tablefmt="fancy_grid", numalign="center"))
-        print("--------------------")
+    round = round + 1
+    print("Round", round, "of 38")
+    print("Results of round", round, "are: ")
+    for i in rnd1:
+        score1=(random.choice(score))
+        score2=(random.choice(score))
+        i[0][5]=i[0][5]+score1
+        i[1][5]=i[1][5]+score2
+        mp()
+        wld_pts()
+        print(i[0][0], i[1][0], sep="   vs   ")
+        print(score1,":",score2)
+    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"],
+                       ))
+    print("--------------------")
+
+    round = round + 1
+    print("Round", round, "of 38")
+    print("Results of round", round, "are: ")
+    for i in rnd2:
+        score1 = (random.choice(score))
+        score2 = (random.choice(score))
+        i[0][5] = i[0][5] + score1
+        i[1][5] = i[1][5] + score2
+        mp()
+        wld_pts()
+        print(i[0][0], i[1][0], sep="   vs   ")
+        print(score1, ":", score2)
+    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
+    print("--------------------")
+
+
     game=False
 
 
