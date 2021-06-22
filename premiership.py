@@ -175,6 +175,7 @@ while game:
     print("\nTable after round", round)
     print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"],
                        ))
+    input("Hit enter to start next round")
     print("--------------------")
 
     round = round + 1
