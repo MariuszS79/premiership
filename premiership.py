@@ -114,14 +114,23 @@ def fixtures():
     for i in rnd7:
         print(i[0][0], i[1][0], sep="   vs   ")
 
-
+#create fixtures
 fixtures()
+
+#instert matches played to table
+def mp():
+    i[0][1] = i[0][1]+1
+    i[1][1] = i[1][1]+1
+
+#insert win and points to table
+def w_pts():
+
 
 
 game=True
 while game:
     round=0
-    print ("Welcome to",(season), "season")
+    print ("Welcome to",(season), "season\n")
     for i in range(1):
         round = round + 1
 
@@ -133,10 +142,11 @@ while game:
             score2=(random.choice(score))
             i[0][5]=i[0][5]+score1
             i[1][5]=i[1][5]+score2
+            mp()
             print(i[0][0], i[1][0], sep="   vs   ")
             print(score1,":",score2)
-            print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"],
-                           tablefmt="fancy_grid", numalign="center"))
+        print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"],
+                       tablefmt="fancy_grid", numalign="center"))
         print("--------------------")
     game=False
 
