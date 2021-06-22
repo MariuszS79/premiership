@@ -114,6 +114,14 @@ def fixtures():
     for i in rnd7:
         print(i[0][0], i[1][0], sep="   vs   ")
 
+    rnd8 = [[group_a[0], group_b[-8]], [group_b[-9], group_a[-7]], [group_a[-6], group_b[-10]],
+            [group_b[9], group_a[-5]], [group_a[-4], group_b[8]], [group_b[7], group_a[-3]],
+            [group_a[-2], group_b[6]], [group_b[5], group_a[-1]], [group_a[1], group_b[4]],
+            [group_b[3], group_a[2]]]
+    print("----------\nRound 7\n----------")
+    for i in rnd8:
+        print(i[0][0], i[1][0], sep="   vs   ")
+
 
 
 
