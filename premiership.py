@@ -164,6 +164,8 @@ while game:
         #print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], tablefmt="fancy_grid", numalign="center"))
     print("--------------------")
     input("Hit enter to start the season")
+
+    #round 1
     round = round + 1
     print("\nRound", round, "of 38")
     print("Results of round", round, "are: ")
@@ -182,6 +184,7 @@ while game:
     input("Hit enter to start next round")
     print("--------------------")
 
+    #round 2
     round = round + 1
     print("\nRound", round, "of 38")
     print("Results of round", round, "are: ")
@@ -199,6 +202,8 @@ while game:
     print("--------------------")
 
 
+    #winner on end of the season
+    print (teams[0][0])
     game=False
 
 
