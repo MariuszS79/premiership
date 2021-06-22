@@ -114,8 +114,8 @@ def fixtures():
     for i in rnd7:
         print(i[0][0], i[1][0], sep="   vs   ")
 
-#create fixtures
-fixtures()
+
+
 
 #instert matches played to table
 def mp():
@@ -159,8 +159,11 @@ game=True
 while game:
     round=0
     print ("\nWelcome to",(season), "season\n")
+    print ("Fixtures for this season are: ")
+    fixtures()
         #print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], tablefmt="fancy_grid", numalign="center"))
-
+    print("--------------------")
+    input("Hit enter to start the season")
     round = round + 1
     print("\nRound", round, "of 38")
     print("Results of round", round, "are: ")
