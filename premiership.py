@@ -140,6 +140,19 @@ def wld_pts():
         i[0][8] = i[0][8] + 0
         i[1][8] = i[1][8] + 3
 
+#insert gf ga and gd into table
+def gf_ga_gd():
+    i[0][5] = i[0][5] + score1
+    i[1][5] = i[1][5] + score2
+
+    i[0][6] = i[0][6] + score2
+    i[1][6] = i[1][6] + score1
+
+    i[0][7] = i[0][5] - i[0][6]
+    i[1][7] = i[1][5] - i[1][6]
+
+
+
 
 
 game=True
@@ -149,33 +162,33 @@ while game:
         #print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], tablefmt="fancy_grid", numalign="center"))
 
     round = round + 1
-    print("Round", round, "of 38")
+    print("\nRound", round, "of 38")
     print("Results of round", round, "are: ")
     for i in rnd1:
         score1=(random.choice(score))
         score2=(random.choice(score))
-        i[0][5]=i[0][5]+score1
-        i[1][5]=i[1][5]+score2
         mp()
         wld_pts()
+        gf_ga_gd()
         print(i[0][0], i[1][0], sep="   vs   ")
         print(score1,":",score2)
+    print("\nTable after round", round)
     print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"],
                        ))
     print("--------------------")
 
     round = round + 1
-    print("Round", round, "of 38")
+    print("\nRound", round, "of 38")
     print("Results of round", round, "are: ")
-    for i in rnd2:
+    for i in rnd1:
         score1 = (random.choice(score))
         score2 = (random.choice(score))
-        i[0][5] = i[0][5] + score1
-        i[1][5] = i[1][5] + score2
         mp()
         wld_pts()
+        gf_ga_gd()
         print(i[0][0], i[1][0], sep="   vs   ")
         print(score1, ":", score2)
+    print("\nTable after round", round)
     print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
     print("--------------------")
 
