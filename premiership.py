@@ -122,8 +122,24 @@ def mp():
     i[0][1] = i[0][1]+1
     i[1][1] = i[1][1]+1
 
-#insert win and points to table
-def w_pts():
+#insert win, lose, draw and points to table
+def wld_pts():
+    if score1==score2:
+        i[0][3] = i[0][3]+1
+        i[1][3] = i[1][3]+1
+        i[0][8] = i[0][8]+1
+        i[1][8] = i[1][8]+1
+    elif score1>score2:
+        i[0][2] = i[0][2]+1
+        i[1][4] = i[1][4]+1
+        i[0][8] = i[0][8]+3
+        i[1][8] = i[1][8]+0
+
+    elif score1<score2:
+        i[0][2] = i[0][4] + 1
+        i[1][4] = i[1][2] + 1
+        i[0][8] = i[0][8] + 0
+        i[1][8] = i[1][8] + 3
 
 
 
@@ -143,6 +159,8 @@ while game:
             i[0][5]=i[0][5]+score1
             i[1][5]=i[1][5]+score2
             mp()
+            wld_pts()
+
             print(i[0][0], i[1][0], sep="   vs   ")
             print(score1,":",score2)
         print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"],
