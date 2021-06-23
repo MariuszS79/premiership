@@ -151,7 +151,7 @@ def fixtures():
     for i in rnd10:
         print(i[0][0], i[1][0], sep="   vs   ")
 
-    rnd11 = [[group_a[0], group_b[9]], [group_b[8], group_a[9]], [group_a[-9], group_b[7]],
+    rnd11 = [[group_a[0], group_b[8]], [group_b[-10], group_a[9]], [group_a[-9], group_b[7]],
              [group_b[6], group_a[-8]], [group_a[-7], group_b[5]], [group_b[4], group_a[-6]],
              [group_a[-5], group_b[3]], [group_b[2], group_a[-4]], [group_a[-3], group_b[1]],
              [group_b[-1], group_a[-2]]]
