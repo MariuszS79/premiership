@@ -159,66 +159,66 @@ def fixtures():
     for i in rnd11:
         print(i[0][0], i[1][0], sep="   vs   ")
 
-    rnd12 = [[group_a[0], group_b[8]], [group_b[-10], group_a[9]], [group_a[-9], group_b[7]],
-             [group_b[6], group_a[-8]], [group_a[-7], group_b[5]], [group_b[4], group_a[-6]],
-             [group_a[-5], group_b[3]], [group_b[2], group_a[-4]], [group_a[-3], group_b[1]],
-             [group_b[-1], group_a[-2]]]
+    rnd12 = [[group_a[0], group_b[7]], [group_b[-10], group_a[8]], [group_a[9], group_b[6]],
+             [group_b[5], group_a[-9]], [group_a[-8], group_b[4]], [group_b[3], group_a[-7]],
+             [group_a[-6], group_b[2]], [group_b[1], group_a[-5]], [group_a[-4], group_b[-1]],
+             [group_b[-2], group_a[-3]]]
     print("----------\nRound 12\n----------")
     for i in rnd12:
         print(i[0][0], i[1][0], sep="   vs   ")
 
-    rnd13 = [[group_a[0], group_b[7]], [group_b[6], group_a[8]], [group_a[9], group_b[5]],
-             [group_b[4], group_a[-10]], [group_a[-9], group_b[3]], [group_b[2], group_a[-8]],
+    rnd13 = [[group_a[0], group_b[6]], [group_b[-10], group_a[7]], [group_a[8], group_b[5]],
+             [group_b[4], group_a[9]], [group_a[-9], group_b[3]], [group_b[2], group_a[-8]],
              [group_a[-7], group_b[1]], [group_b[-1], group_a[-6]], [group_a[-5], group_b[-2]],
              [group_b[-3], group_a[-4]]]
     print("----------\nRound 13\n----------")
     for i in rnd13:
         print(i[0][0], i[1][0], sep="   vs   ")
 
-    rnd14 = [[group_a[0], group_b[6]], [group_b[5], group_a[7]], [group_a[8], group_b[4]],
-             [group_b[3], group_a[9]], [group_a[-10], group_b[2]], [group_b[1], group_a[-9]],
+    rnd14 = [[group_a[0], group_b[5]], [group_b[-10], group_a[6]], [group_a[7], group_b[4]],
+             [group_b[3], group_a[8]], [group_a[9], group_b[2]], [group_b[1], group_a[-9]],
              [group_a[-8], group_b[-1]], [group_b[-2], group_a[-7]], [group_a[-6], group_b[-3]],
              [group_b[-4], group_a[-5]]]
     print("----------\nRound 14\n----------")
     for i in rnd14:
         print(i[0][0], i[1][0], sep="   vs   ")
 
-    rnd15 = [[group_a[0], group_b[5]], [group_b[4], group_a[6]], [group_a[7], group_b[3]],
-             [group_b[2], group_a[8]], [group_a[9], group_b[1]], [group_b[-1], group_a[-10]],
+    rnd15 = [[group_a[0], group_b[4]], [group_b[-10], group_a[5]], [group_a[6], group_b[3]],
+             [group_b[2], group_a[7]], [group_a[8], group_b[1]], [group_b[-1], group_a[9]],
              [group_a[-9], group_b[-2]], [group_b[-3], group_a[-8]], [group_a[-7], group_b[-4]],
              [group_b[-5], group_a[-6]]]
     print("----------\nRound 15\n----------")
     for i in rnd15:
         print(i[0][0], i[1][0], sep="   vs   ")
 
-    rnd16 = [[group_a[0], group_b[4]], [group_b[3], group_a[5]], [group_a[6], group_b[2]],
-             [group_b[1], group_a[7]], [group_a[8], group_b[-1]], [group_b[-2], group_a[9]],
-             [group_a[-10], group_b[-3]], [group_b[-4], group_a[-9]], [group_a[-8], group_b[-5]],
-             [group_b[-6], group_a[-7]]]
+    rnd16 = [[group_a[0], group_b[3]], [group_b[-10], group_a[6]], [group_a[7], group_b[2]],
+             [group_b[1], group_a[8]], [group_a[9], group_b[-1]], [group_b[-2], group_a[-9]],
+             [group_a[-8], group_b[-3]], [group_b[-4], group_a[-7]], [group_a[-6], group_b[-5]],
+             [group_b[-6], group_a[-5]]]
     print("----------\nRound 16\n----------")
     for i in rnd16:
         print(i[0][0], i[1][0], sep="   vs   ")
 
-    rnd17 = [[group_a[0], group_b[3]], [group_b[2], group_a[4]], [group_a[5], group_b[1]],
-             [group_b[-1], group_a[6]], [group_a[7], group_b[-2]], [group_b[-3], group_a[8]],
-             [group_a[9], group_b[-4]], [group_b[-5], group_a[-10]], [group_a[-9], group_b[-6]],
-             [group_b[-7], group_a[-8]]]
+    rnd17 = [[group_a[0], group_b[2]], [group_b[-10], group_a[7]], [group_a[8], group_b[1]],
+             [group_b[-1], group_a[9]], [group_a[-9], group_b[-2]], [group_b[-3], group_a[-8]],
+             [group_a[-7], group_b[-4]], [group_b[-5], group_a[-6]], [group_a[-5], group_b[-6]],
+             [group_b[-7], group_a[-4]]]
     print("----------\nRound 17\n----------")
     for i in rnd17:
         print(i[0][0], i[1][0], sep="   vs   ")
 
-    rnd18 = [[group_a[0], group_b[2]], [group_b[1], group_a[3]], [group_a[4], group_b[-1]],
-             [group_b[-2], group_a[5]], [group_a[6], group_b[-3]], [group_b[-4], group_a[7]],
-             [group_a[8], group_b[-5]], [group_b[-6], group_a[9]], [group_a[-10], group_b[-7]],
-             [group_b[-8], group_a[-9]]]
+    rnd18 = [[group_a[0], group_b[1]], [group_b[-10], group_a[8]], [group_a[9], group_b[-1]],
+             [group_b[-2], group_a[-9]], [group_a[-8], group_b[-3]], [group_b[-4], group_a[-7]],
+             [group_a[-6], group_b[-5]], [group_b[-6], group_a[-5]], [group_a[-4], group_b[-7]],
+             [group_b[-8], group_a[-3]]]
     print("----------\nRound 18\n----------")
     for i in rnd18:
         print(i[0][0], i[1][0], sep="   vs   ")
 
-    rnd19 = [[group_a[0], group_b[1]], [group_b[-1], group_a[2]], [group_a[3], group_b[-2]],
-             [group_b[-3], group_a[4]], [group_a[5], group_b[-4]], [group_b[-5], group_a[6]],
-             [group_a[7], group_b[-6]], [group_b[-7], group_a[8]], [group_a[9], group_b[-8]],
-             [group_b[-9], group_a[-10]]]
+    rnd19 = [[group_a[0], group_b[-1]], [group_b[-10], group_a[9]], [group_a[-9], group_b[-2]],
+             [group_b[-3], group_a[-8]], [group_a[-7], group_b[-4]], [group_b[-5], group_a[-6]],
+             [group_a[-5], group_b[-6]], [group_b[-7], group_a[-4]], [group_a[-3], group_b[-8]],
+             [group_b[-9], group_a[-2]]]
     print("----------\nRound 19\n----------")
     for i in rnd19:
         print(i[0][0], i[1][0], sep="   vs   ")
