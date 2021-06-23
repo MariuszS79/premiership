@@ -66,6 +66,25 @@ def fixtures():
     global rnd17
     global rnd18
     global rnd19
+    global rnd20
+    global rnd21
+    global rnd22
+    global rnd23
+    global rnd24
+    global rnd25
+    global rnd26
+    global rnd27
+    global rnd28
+    global rnd29
+    global rnd30
+    global rnd31
+    global rnd32
+    global rnd33
+    global rnd34
+    global rnd35
+    global rnd36
+    global rnd37
+    global rnd38
 
     random.shuffle(teams)
     group_a=teams[:10]
@@ -223,10 +242,102 @@ def fixtures():
     for i in rnd19:
         print(i[0][0], i[1][0], sep="   vs   ")
 
+    rnd20=[x[::-1] for x in rnd1]
+    print("----------\nRound 20\n----------")
+    for i in rnd20:
+        print(i[0][0], i[1][0], sep="   vs   ")
 
+    rnd21=[x[::-1] for x in rnd2]
+    print("----------\nRound 21\n----------")
+    for i in rnd21:
+        print(i[0][0], i[1][0], sep="   vs   ")
+    
+    rnd22=[x[::-1] for x in rnd3]
+    print("----------\nRound 22\n----------")
+    for i in rnd22:
+        print(i[0][0], i[1][0], sep="   vs   ")
 
+    rnd23=[x[::-1] for x in rnd4]
+    print("----------\nRound 23\n----------")
+    for i in rnd23:
+        print(i[0][0], i[1][0], sep="   vs   ")
 
+    rnd24=[x[::-1] for x in rnd5]
+    print("----------\nRound 24\n----------")
+    for i in rnd24:
+        print(i[0][0], i[1][0], sep="   vs   ")
 
+    rnd25=[x[::-1] for x in rnd6]
+    print("----------\nRound 25\n----------")
+    for i in rnd25:
+        print(i[0][0], i[1][0], sep="   vs   ")
+
+    rnd26=[x[::-1] for x in rnd7]
+    print("----------\nRound 26\n----------")
+    for i in rnd26:
+        print(i[0][0], i[1][0], sep="   vs   ")
+
+    rnd27=[x[::-1] for x in rnd8]
+    print("----------\nRound 27\n----------")
+    for i in rnd27:
+        print(i[0][0], i[1][0], sep="   vs   ")
+
+    rnd28=[x[::-1] for x in rnd9]
+    print("----------\nRound 28\n----------")
+    for i in rnd28:
+        print(i[0][0], i[1][0], sep="   vs   ")
+
+    rnd29=[x[::-1] for x in rnd10]
+    print("----------\nRound 29\n----------")
+    for i in rnd29:
+        print(i[0][0], i[1][0], sep="   vs   ")
+
+    rnd30=[x[::-1] for x in rnd11]
+    print("----------\nRound 30\n----------")
+    for i in rnd30:
+        print(i[0][0], i[1][0], sep="   vs   ")
+
+    rnd31=[x[::-1] for x in rnd12]
+    print("----------\nRound 31\n----------")
+    for i in rnd31:
+        print(i[0][0], i[1][0], sep="   vs   ")
+
+    rnd32=[x[::-1] for x in rnd13]
+    print("----------\nRound 32\n----------")
+    for i in rnd32:
+        print(i[0][0], i[1][0], sep="   vs   ")
+
+    rnd33=[x[::-1] for x in rnd14]
+    print("----------\nRound 33\n----------")
+    for i in rnd33:
+        print(i[0][0], i[1][0], sep="   vs   ")
+
+    rnd34=[x[::-1] for x in rnd15]
+    print("----------\nRound 34\n----------")
+    for i in rnd34:
+        print(i[0][0], i[1][0], sep="   vs   ")
+
+    rnd35=[x[::-1] for x in rnd16]
+    print("----------\nRound 35\n----------")
+    for i in rnd35:
+        print(i[0][0], i[1][0], sep="   vs   ")
+
+    rnd36=[x[::-1] for x in rnd17]
+    print("----------\nRound 36\n----------")
+    for i in rnd36:
+        print(i[0][0], i[1][0], sep="   vs   ")
+
+    rnd37=[x[::-1] for x in rnd18]
+    print("----------\nRound 37\n----------")
+    for i in rnd37:
+        print(i[0][0], i[1][0], sep="   vs   ")
+
+    rnd38=[x[::-1] for x in rnd19]
+    print("----------\nRound 38\n----------")
+    for i in rnd38:
+        print(i[0][0], i[1][0], sep="   vs   ")
+
+  
 #instert matches played to table
 def mp():
     i[0][1] = i[0][1]+1
@@ -617,9 +728,357 @@ while game:
     input("Hit enter to start next round")
     print("--------------------")
 
+    # round 20
+    round = round + 1
+    print("\nRound", round, "of 38")
+    print("Results of round", round, "are: ")
+    for i in rnd20:
+        score1 = (random.choice(score))
+        score2 = (random.choice(score))
+        mp()
+        wld_pts()
+        gf_ga_gd()
+        print(i[0][0], i[1][0], sep="   vs   ")
+        print(score1, ":", score2)
+    print("\nTable after round", round)
+    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
+    input("Hit enter to start next round")
+    print("--------------------")
+
+    # round 21
+    round = round + 1
+    print("\nRound", round, "of 38")
+    print("Results of round", round, "are: ")
+    for i in rnd21:
+        score1 = (random.choice(score))
+        score2 = (random.choice(score))
+        mp()
+        wld_pts()
+        gf_ga_gd()
+        print(i[0][0], i[1][0], sep="   vs   ")
+        print(score1, ":", score2)
+    print("\nTable after round", round)
+    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
+    input("Hit enter to start next round")
+    print("--------------------")
+
+    # round 22
+    round = round + 1
+    print("\nRound", round, "of 38")
+    print("Results of round", round, "are: ")
+    for i in rnd22:
+        score1 = (random.choice(score))
+        score2 = (random.choice(score))
+        mp()
+        wld_pts()
+        gf_ga_gd()
+        print(i[0][0], i[1][0], sep="   vs   ")
+        print(score1, ":", score2)
+    print("\nTable after round", round)
+    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
+    input("Hit enter to start next round")
+    print("--------------------")
+
+    # round 23
+    round = round + 1
+    print("\nRound", round, "of 38")
+    print("Results of round", round, "are: ")
+    for i in rnd23:
+        score1 = (random.choice(score))
+        score2 = (random.choice(score))
+        mp()
+        wld_pts()
+        gf_ga_gd()
+        print(i[0][0], i[1][0], sep="   vs   ")
+        print(score1, ":", score2)
+    print("\nTable after round", round)
+    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
+    input("Hit enter to start next round")
+    print("--------------------")
+
+    # round 24
+    round = round + 1
+    print("\nRound", round, "of 38")
+    print("Results of round", round, "are: ")
+    for i in rnd24:
+        score1 = (random.choice(score))
+        score2 = (random.choice(score))
+        mp()
+        wld_pts()
+        gf_ga_gd()
+        print(i[0][0], i[1][0], sep="   vs   ")
+        print(score1, ":", score2)
+    print("\nTable after round", round)
+    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
+    input("Hit enter to start next round")
+    print("--------------------")
+
+    # round 25
+    round = round + 1
+    print("\nRound", round, "of 38")
+    print("Results of round", round, "are: ")
+    for i in rnd25:
+        score1 = (random.choice(score))
+        score2 = (random.choice(score))
+        mp()
+        wld_pts()
+        gf_ga_gd()
+        print(i[0][0], i[1][0], sep="   vs   ")
+        print(score1, ":", score2)
+    print("\nTable after round", round)
+    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
+    input("Hit enter to start next round")
+    print("--------------------")
+
+    # round 26
+    round = round + 1
+    print("\nRound", round, "of 38")
+    print("Results of round", round, "are: ")
+    for i in rnd26:
+        score1 = (random.choice(score))
+        score2 = (random.choice(score))
+        mp()
+        wld_pts()
+        gf_ga_gd()
+        print(i[0][0], i[1][0], sep="   vs   ")
+        print(score1, ":", score2)
+    print("\nTable after round", round)
+    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
+    input("Hit enter to start next round")
+    print("--------------------")
+
+    # round 27
+    round = round + 1
+    print("\nRound", round, "of 38")
+    print("Results of round", round, "are: ")
+    for i in rnd27:
+        score1 = (random.choice(score))
+        score2 = (random.choice(score))
+        mp()
+        wld_pts()
+        gf_ga_gd()
+        print(i[0][0], i[1][0], sep="   vs   ")
+        print(score1, ":", score2)
+    print("\nTable after round", round)
+    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
+    input("Hit enter to start next round")
+    print("--------------------")
+
+    # round 28
+    round = round + 1
+    print("\nRound", round, "of 38")
+    print("Results of round", round, "are: ")
+    for i in rnd28:
+        score1 = (random.choice(score))
+        score2 = (random.choice(score))
+        mp()
+        wld_pts()
+        gf_ga_gd()
+        print(i[0][0], i[1][0], sep="   vs   ")
+        print(score1, ":", score2)
+    print("\nTable after round", round)
+    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
+    input("Hit enter to start next round")
+    print("--------------------")
+
+    # round 29
+    round = round + 1
+    print("\nRound", round, "of 38")
+    print("Results of round", round, "are: ")
+    for i in rnd29:
+        score1 = (random.choice(score))
+        score2 = (random.choice(score))
+        mp()
+        wld_pts()
+        gf_ga_gd()
+        print(i[0][0], i[1][0], sep="   vs   ")
+        print(score1, ":", score2)
+    print("\nTable after round", round)
+    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
+    input("Hit enter to start next round")
+    print("--------------------")
+
+    # round 30
+    round = round + 1
+    print("\nRound", round, "of 38")
+    print("Results of round", round, "are: ")
+    for i in rnd30:
+        score1 = (random.choice(score))
+        score2 = (random.choice(score))
+        mp()
+        wld_pts()
+        gf_ga_gd()
+        print(i[0][0], i[1][0], sep="   vs   ")
+        print(score1, ":", score2)
+    print("\nTable after round", round)
+    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
+    input("Hit enter to start next round")
+    print("--------------------")
+
+    # round 31
+    round = round + 1
+    print("\nRound", round, "of 38")
+    print("Results of round", round, "are: ")
+    for i in rnd31:
+        score1 = (random.choice(score))
+        score2 = (random.choice(score))
+        mp()
+        wld_pts()
+        gf_ga_gd()
+        print(i[0][0], i[1][0], sep="   vs   ")
+        print(score1, ":", score2)
+    print("\nTable after round", round)
+    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
+    input("Hit enter to start next round")
+    print("--------------------")
+
+    # round 32
+    round = round + 1
+    print("\nRound", round, "of 38")
+    print("Results of round", round, "are: ")
+    for i in rnd32:
+        score1 = (random.choice(score))
+        score2 = (random.choice(score))
+        mp()
+        wld_pts()
+        gf_ga_gd()
+        print(i[0][0], i[1][0], sep="   vs   ")
+        print(score1, ":", score2)
+    print("\nTable after round", round)
+    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
+    input("Hit enter to start next round")
+    print("--------------------")
+
+    # round 33
+    round = round + 1
+    print("\nRound", round, "of 38")
+    print("Results of round", round, "are: ")
+    for i in rnd33:
+        score1 = (random.choice(score))
+        score2 = (random.choice(score))
+        mp()
+        wld_pts()
+        gf_ga_gd()
+        print(i[0][0], i[1][0], sep="   vs   ")
+        print(score1, ":", score2)
+    print("\nTable after round", round)
+    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
+    input("Hit enter to start next round")
+    print("--------------------")
+
+    # round 34
+    round = round + 1
+    print("\nRound", round, "of 38")
+    print("Results of round", round, "are: ")
+    for i in rnd34:
+        score1 = (random.choice(score))
+        score2 = (random.choice(score))
+        mp()
+        wld_pts()
+        gf_ga_gd()
+        print(i[0][0], i[1][0], sep="   vs   ")
+        print(score1, ":", score2)
+    print("\nTable after round", round)
+    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
+    input("Hit enter to start next round")
+    print("--------------------")
+
+    # round 35
+    round = round + 1
+    print("\nRound", round, "of 38")
+    print("Results of round", round, "are: ")
+    for i in rnd35:
+        score1 = (random.choice(score))
+        score2 = (random.choice(score))
+        mp()
+        wld_pts()
+        gf_ga_gd()
+        print(i[0][0], i[1][0], sep="   vs   ")
+        print(score1, ":", score2)
+    print("\nTable after round", round)
+    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
+    input("Hit enter to start next round")
+    print("--------------------")
+
+    # round 36
+    round = round + 1
+    print("\nRound", round, "of 38")
+    print("Results of round", round, "are: ")
+    for i in rnd36:
+        score1 = (random.choice(score))
+        score2 = (random.choice(score))
+        mp()
+        wld_pts()
+        gf_ga_gd()
+        print(i[0][0], i[1][0], sep="   vs   ")
+        print(score1, ":", score2)
+    print("\nTable after round", round)
+    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
+    input("Hit enter to start next round")
+    print("--------------------")
+
+    # round 37
+    round = round + 1
+    print("\nRound", round, "of 38")
+    print("Results of round", round, "are: ")
+    for i in rnd37:
+        score1 = (random.choice(score))
+        score2 = (random.choice(score))
+        mp()
+        wld_pts()
+        gf_ga_gd()
+        print(i[0][0], i[1][0], sep="   vs   ")
+        print(score1, ":", score2)
+    print("\nTable after round", round)
+    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
+    input("Hit enter to start next round")
+    print("--------------------")
+
+    # round 38
+    round = round + 1
+    print("\nRound", round, "of 38")
+    print("Results of round", round, "are: ")
+    for i in rnd38:
+        score1 = (random.choice(score))
+        score2 = (random.choice(score))
+        mp()
+        wld_pts()
+        gf_ga_gd()
+        print(i[0][0], i[1][0], sep="   vs   ")
+        print(score1, ":", score2)
+    print("\nTable after round", round)
+    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
+    input("Hit enter to see season results")
+    print("--------------------")
+
+
     #winner on end of the season
     print ("Winner of the season is: ",(teams[0][0]))
     game=False
+
+
+
+
+
 
 
 
