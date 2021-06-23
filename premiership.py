@@ -59,6 +59,13 @@ def fixtures():
     global rnd10
     global rnd11
     global rnd12
+    global rnd13
+    global rnd14
+    global rnd15
+    global rnd16
+    global rnd17
+    global rnd18
+    global rnd19
 
     random.shuffle(teams)
     group_a=teams[:10]
@@ -175,6 +182,47 @@ def fixtures():
     print("----------\nRound 14\n----------")
     for i in rnd14:
         print(i[0][0], i[1][0], sep="   vs   ")
+
+    rnd15 = [[group_a[0], group_b[5]], [group_b[4], group_a[6]], [group_a[7], group_b[3]],
+             [group_b[2], group_a[8]], [group_a[9], group_b[1]], [group_b[-1], group_a[-10]],
+             [group_a[-9], group_b[-2]], [group_b[-3], group_a[-8]], [group_a[-7], group_b[-4]],
+             [group_b[-5], group_a[-6]]]
+    print("----------\nRound 15\n----------")
+    for i in rnd15:
+        print(i[0][0], i[1][0], sep="   vs   ")
+
+    rnd16 = [[group_a[0], group_b[4]], [group_b[3], group_a[5]], [group_a[6], group_b[2]],
+             [group_b[1], group_a[7]], [group_a[8], group_b[-1]], [group_b[-2], group_a[9]],
+             [group_a[-10], group_b[-3]], [group_b[-4], group_a[-9]], [group_a[-8], group_b[-5]],
+             [group_b[-6], group_a[-7]]]
+    print("----------\nRound 16\n----------")
+    for i in rnd16:
+        print(i[0][0], i[1][0], sep="   vs   ")
+
+    rnd17 = [[group_a[0], group_b[3]], [group_b[2], group_a[4]], [group_a[5], group_b[1]],
+             [group_b[-1], group_a[6]], [group_a[7], group_b[-2]], [group_b[-3], group_a[8]],
+             [group_a[9], group_b[-4]], [group_b[-5], group_a[-10]], [group_a[-9], group_b[-6]],
+             [group_b[-7], group_a[-8]]]
+    print("----------\nRound 17\n----------")
+    for i in rnd17:
+        print(i[0][0], i[1][0], sep="   vs   ")
+
+    rnd18 = [[group_a[0], group_b[2]], [group_b[1], group_a[3]], [group_a[4], group_b[-1]],
+             [group_b[-2], group_a[5]], [group_a[6], group_b[-3]], [group_b[-4], group_a[7]],
+             [group_a[8], group_b[-5]], [group_b[-6], group_a[9]], [group_a[-10], group_b[-7]],
+             [group_b[-8], group_a[-9]]]
+    print("----------\nRound 18\n----------")
+    for i in rnd18:
+        print(i[0][0], i[1][0], sep="   vs   ")
+
+    rnd19 = [[group_a[0], group_b[1]], [group_b[-1], group_a[2]], [group_a[3], group_b[-2]],
+             [group_b[-3], group_a[4]], [group_a[5], group_b[-4]], [group_b[-5], group_a[6]],
+             [group_a[7], group_b[-6]], [group_b[-7], group_a[8]], [group_a[9], group_b[-8]],
+             [group_b[-9], group_a[-10]]]
+    print("----------\nRound 19\n----------")
+    for i in rnd19:
+        print(i[0][0], i[1][0], sep="   vs   ")
+
 
 
 
