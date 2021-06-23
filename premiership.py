@@ -53,6 +53,12 @@ def fixtures():
     global rnd4
     global rnd5
     global rnd6
+    global rnd7
+    global rnd8
+    global rnd9
+    global rnd10
+    global rnd11
+    global rnd12
 
     random.shuffle(teams)
     group_a=teams[:10]
@@ -160,6 +166,14 @@ def fixtures():
              [group_b[-3], group_a[-4]]]
     print("----------\nRound 13\n----------")
     for i in rnd13:
+        print(i[0][0], i[1][0], sep="   vs   ")
+
+    rnd14 = [[group_a[0], group_b[6]], [group_b[5], group_a[7]], [group_a[8], group_b[4]],
+             [group_b[3], group_a[9]], [group_a[-10], group_b[2]], [group_b[1], group_a[-9]],
+             [group_a[-8], group_b[-1]], [group_b[-2], group_a[-7]], [group_a[-6], group_b[-3]],
+             [group_b[-4], group_a[-5]]]
+    print("----------\nRound 14\n----------")
+    for i in rnd14:
         print(i[0][0], i[1][0], sep="   vs   ")
 
 
