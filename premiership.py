@@ -23,7 +23,7 @@ watford=["Watford", 0, 0, 0, 0, 0, 0, 0, 0]
 west_ham=["West Ham", 0, 0, 0, 0, 0, 0, 0, 0]
 wolves=["Wolves", 0, 0, 0, 0, 0, 0, 0, 0]
 
-teams=[arsenal, aston_villa, brentford, brighton, burnley, chelsea, crystal_palace, everton, leeds_united, leicester_city, liverpool, manchester_city, manchester_united, newcastle_united, norwich_city, southampton, tottenham, watford, west_ham, wolves]
+teams=[arsenal[0], aston_villa[0], brentford[0], brighton[0], burnley[0], chelsea[0], crystal_palace[0], everton[0], leeds_united[0], leicester_city[0], liverpool[0], manchester_city[0], manchester_united[0], newcastle_united[0], norwich_city[0], southampton[0], tottenham[0], watford[0], west_ham[0], wolves[0]]
 
 score=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 7]
 
@@ -45,8 +45,7 @@ season=str(season_p1)+"/"+str(season_p2)
 
 #setting fixtures
 def fixtures():
-    global group_a
-    global group_b
+
     global rnd1
     global rnd2
     global rnd3
@@ -87,32 +86,30 @@ def fixtures():
     global rnd38
 
     random.shuffle(teams)
-    group_a=teams[:10]
-    group_b=teams[10:]
+    
 
-    rnd1=[[group_a[0], group_b[-1]], [group_b[-2], group_a[1]], [group_a[2], group_b[-3]],
-          [group_b[-4], group_a[3]], [group_a[4], group_b[-5]], [group_b[-6], group_a[5]],
-          [group_a[6], group_b[-7]], [group_b[-8], group_a[7]], [group_a[8], group_b[-9]],
-          [group_b[-10], group_a[9]]]
+    rnd1=[[teams[0], teams[19]], [teams[1], teams[18]], [teams[2], teams[17]],
+    [teams[3], teams[16]], [teams[4], teams[15]], [teams[5], teams[14]],
+    [teams[6], teams[13]], [teams[7], teams[12]], [teams[8], teams[11]],
+    [teams[9], teams[10]]]
     print("----------\nRound 1\n----------")
     for i in rnd1:
-        print(i[0][0], i[1][0], sep="   vs   ")
+        print(i[0], i[1], sep="   vs   ")
 
-    rnd2=[[group_a[0], group_b[-2]], [group_b[-3], group_a[-1]], [group_a[1], group_b[-4]],
-          [group_b[-5], group_a[2]], [group_a[3], group_b[-6]], [group_b[-7], group_a[4]],
-          [group_a[5], group_b[-8]], [group_b[-9], group_a[6]], [group_a[7], group_b[-10]],
-          [group_b[9], group_a[8]]]
+    rnd2=[[teams[0], teams[18]], [teams[19], teams[17]], [teams[1], teams[16]],
+    [teams[2], teams[15]], [teams[3], teams[14]], [teams[4], teams[13]],
+    [teams[5], teams[12]], [teams[6], teams[11]], [teams[7], teams[10]],
+    [teams[8], teams[9]]]
     print("----------\nRound 2\n----------")
     for i in rnd2:
-        print(i[0][0], i[1][0], sep="   vs   ")
+        print(i[0], i[1], sep="   vs   ")
 
-    rnd3=[[group_a[0], group_b[-3]], [group_b[-4], group_a[-2]], [group_a[-1], group_b[-5]],
-          [group_b[-6], group_a[1]], [group_a[2], group_b[-7]], [group_b[-8], group_a[3]],
-          [group_a[4], group_b[-9]], [group_b[-10], group_a[5]], [group_a[6], group_b[9]],
-          [group_b[8], group_a[7]]]
+    rnd3=[[teams[0], teams[17]], [teams[18], teams[16]], [teams[19], teams[15]],
+    [teams[1], teams[14]], [teams[2], teams[13]], [teams[3], teams[12]],
+    [teams[4], teams[11]], [teams[5], teams[10]], [teams[6], teams[9]], [teams[7], teams[8]]]
     print("----------\nRound 3\n----------")
     for i in rnd3:
-        print(i[0][0], i[1][0], sep="   vs   ")
+        print(i[0], i[1], sep="   vs   ")
 
     rnd4=[[group_a[0], group_b[-4]], [group_b[-5], group_a[-3]], [group_a[-2], group_b[-6]],
           [group_b[-7], group_a[-1]], [group_a[1], group_b[-8]], [group_b[-9], group_a[2]],
@@ -1074,6 +1071,7 @@ while game:
     #winner on end of the season
     print ("Winner of the season is: ",(teams[0][0]))
     game=False
+
 
 
 
