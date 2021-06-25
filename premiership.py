@@ -23,7 +23,7 @@ watford=["Watford", 0, 0, 0, 0, 0, 0, 0, 0]
 west_ham=["West Ham", 0, 0, 0, 0, 0, 0, 0, 0]
 wolves=["Wolves", 0, 0, 0, 0, 0, 0, 0, 0]
 
-teams=[arsenal[0], aston_villa[0], brentford[0], brighton[0], burnley[0], chelsea[0], crystal_palace[0], everton[0], leeds_united[0], leicester_city[0], liverpool[0], manchester_city[0], manchester_united[0], newcastle_united[0], norwich_city[0], southampton[0], tottenham[0], watford[0], west_ham[0], wolves[0]]
+teams=[arsenal, aston_villa, brentford, brighton, burnley, chelsea, crystal_palace, everton, leeds_united, leicester_city, liverpool, manchester_city, manchester_united, newcastle_united, norwich_city, southampton, tottenham, watford, west_ham, wolves]
 
 score=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 7]
 
@@ -94,7 +94,7 @@ def fixtures():
     [teams[9], teams[10]]]
     print("----------\nRound 1\n----------")
     for i in rnd1:
-        print(i[0], i[1], sep="   vs   ")
+        print(i[0][0], i[1][0], sep="   vs   ")
 
     rnd2=[[teams[0], teams[18]], [teams[19], teams[17]], [teams[1], teams[16]],
     [teams[2], teams[15]], [teams[3], teams[14]], [teams[4], teams[13]],
@@ -102,139 +102,122 @@ def fixtures():
     [teams[8], teams[9]]]
     print("----------\nRound 2\n----------")
     for i in rnd2:
-        print(i[0], i[1], sep="   vs   ")
+        print(i[0][0], i[1][0], sep="   vs   ")
 
     rnd3=[[teams[0], teams[17]], [teams[18], teams[16]], [teams[19], teams[15]],
     [teams[1], teams[14]], [teams[2], teams[13]], [teams[3], teams[12]],
     [teams[4], teams[11]], [teams[5], teams[10]], [teams[6], teams[9]], [teams[7], teams[8]]]
     print("----------\nRound 3\n----------")
     for i in rnd3:
-        print(i[0], i[1], sep="   vs   ")
+        print(i[0][0], i[1][0], sep="   vs   ")
 
-    rnd4=[[group_a[0], group_b[-4]], [group_b[-5], group_a[-3]], [group_a[-2], group_b[-6]],
-          [group_b[-7], group_a[-1]], [group_a[1], group_b[-8]], [group_b[-9], group_a[2]],
-          [group_a[3], group_b[-10]], [group_b[9], group_a[4]], [group_a[5], group_b[8]],
-          [group_b[7], group_a[6]]]
+    rnd4=[[teams[0], teams[16]], [teams[17], teams[15]], [teams[18], teams[14]],
+    [teams[19], teams[13]], [teams[1], teams[12]], [teams[2], teams[11]],
+    [teams[3], teams[10]], [teams[4], teams[9]], [teams[5], teams[8]], [teams[6], teams[7]]]
     print("----------\nRound 4\n----------")
     for i in rnd4:
         print(i[0][0], i[1][0], sep="   vs   ")
 
-    rnd5=[[group_a[0], group_b[-5]], [group_b[-6], group_a[-4]], [group_a[-3], group_b[-7]],
-          [group_b[-8], group_a[-2]], [group_a[-1], group_b[-9]], [group_b[-10], group_a[1]],
-          [group_a[2], group_b[9]], [group_b[8], group_a[3]], [group_a[4], group_b[7]],
-          [group_b[6], group_a[5]]]
+
+    rnd5=[[teams[0], teams[15]], [teams[16], teams[14]], [teams[17], teams[13]],
+    [teams[18], teams[12]], [teams[19], teams[11]], [teams[1], teams[10]],
+    [teams[2], teams[9]], [teams[3], teams[8]], [teams[4], teams[7]], [teams[5], teams[6]]]
     print("----------\nRound 5\n----------")
     for i in rnd5:
         print(i[0][0], i[1][0], sep="   vs   ")
 
-    rnd6=[[group_a[0], group_b[-6]], [group_b[-7], group_a[-5]], [group_a[-4], group_b[-8]],
-          [group_b[-9], group_a[-3]], [group_a[-2], group_b[-10]], [group_b[9], group_a[-1]],
-          [group_a[1], group_b[8]], [group_b[7], group_a[2]], [group_a[3], group_b[6]],
-          [group_b[5], group_a[4]]]
+    rnd6=[[teams[0], teams[14]], [teams[15], teams[13]], [teams[16], teams[12]],
+    [teams[17], teams[11]], [teams[18], teams[10]], [teams[19], teams[9]],
+    [teams[1], teams[8]], [teams[2], teams[7]], [teams[3], teams[6]], [teams[4], teams[5]]]
     print("----------\nRound 6\n----------")
     for i in rnd6:
         print(i[0][0], i[1][0], sep="   vs   ")
 
-    rnd7=[[group_a[0], group_b[-7]], [group_b[-8], group_a[-6]], [group_a[-5], group_b[-9]],
-          [group_b[-10], group_a[-4]], [group_a[-3], group_b[9]], [group_b[8], group_a[-2]],
-          [group_a[-1], group_b[7]], [group_b[6], group_a[1]], [group_a[2], group_b[5]],
-          [group_b[4], group_a[3]]]
+    rnd7=[[teams[0], teams[13]], [teams[14], teams[12]], [teams[15], teams[11]],
+    [teams[16], teams[10]], [teams[17], teams[9]], [teams[18], teams[8]],
+    [teams[19], teams[7]], [teams[1], teams[6]], [teams[2], teams[5]], [teams[3], teams[4]]]
     print("----------\nRound 7\n----------")
     for i in rnd7:
         print(i[0][0], i[1][0], sep="   vs   ")
 
-    rnd8 = [[group_a[0], group_b[-8]], [group_b[-9], group_a[-7]], [group_a[-6], group_b[-10]],
-            [group_b[9], group_a[-5]], [group_a[-4], group_b[8]], [group_b[7], group_a[-3]],
-            [group_a[-2], group_b[6]], [group_b[5], group_a[-1]], [group_a[1], group_b[4]],
-            [group_b[3], group_a[2]]]
+    rnd8=[[teams[0], teams[12]], [teams[13], teams[11]], [teams[14], teams[10]],
+    [teams[15], teams[9]], [teams[16], teams[8]], [teams[17], teams[7]],
+    [teams[18], teams[6]], [teams[19], teams[5]], [teams[1], teams[4]], [teams[2], teams[3]]]
     print("----------\nRound 8\n----------")
     for i in rnd8:
         print(i[0][0], i[1][0], sep="   vs   ")
 
-    rnd9 = [[group_a[0], group_b[-9]], [group_b[-10], group_a[-8]], [group_a[-7], group_b[9]],
-            [group_b[8], group_a[-6]], [group_a[-5], group_b[7]], [group_b[6], group_a[-4]],
-            [group_a[-3], group_b[5]], [group_b[4], group_a[-2]], [group_a[-1], group_b[3]],
-            [group_b[2], group_a[1]]]
+    rnd9=[[teams[0], teams[11]], [teams[12], teams[10]], [teams[13], teams[9]],
+    [teams[14], teams[8]], [teams[15], teams[7]], [teams[16], teams[6]],
+    [teams[17], teams[5]], [teams[18], teams[4]], [teams[19], teams[3]], [teams[1], teams[2]]]
     print("----------\nRound 9\n----------")
     for i in rnd9:
         print(i[0][0], i[1][0], sep="   vs   ")
 
-    rnd10 = [[group_a[0], group_b[-10]], [group_b[9], group_a[-9]], [group_a[-8], group_b[8]],
-            [group_b[7], group_a[-7]], [group_a[-6], group_b[6]], [group_b[5], group_a[-5]],
-            [group_a[-4], group_b[4]], [group_b[3], group_a[-3]], [group_a[-2], group_b[2]],
-            [group_b[1], group_a[-1]]]
+    rnd10=[[teams[0], teams[10]], [teams[11], teams[9]], [teams[12], teams[8]],
+    [teams[13], teams[7]], [teams[14], teams[6]], [teams[15], teams[5]],
+    [teams[16], teams[4]], [teams[17], teams[3]], [teams[18], teams[2]], [teams[19], teams[1]]]
     print("----------\nRound 10\n----------")
     for i in rnd10:
         print(i[0][0], i[1][0], sep="   vs   ")
 
-    rnd11 = [[group_a[0], group_b[8]], [group_b[-10], group_a[9]], [group_a[-9], group_b[7]],
-             [group_b[6], group_a[-8]], [group_a[-7], group_b[5]], [group_b[4], group_a[-6]],
-             [group_a[-5], group_b[3]], [group_b[2], group_a[-4]], [group_a[-3], group_b[1]],
-             [group_b[-1], group_a[-2]]]
+    rnd11=[[teams[0], teams[9]], [teams[10], teams[8]], [teams[11], teams[7]], [teams[12], teams[6]], [teams[13], teams[5]], [teams[14], teams[4]], [teams[15], teams[3]], [teams[16], teams[2]], [teams[17], teams[1]], [teams[18], teams[19]]]
     print("----------\nRound 11\n----------")
     for i in rnd11:
-        print(i[0][0], i[1][0], sep="   vs   ")
+          print(i[0][0], i[1][0], sep="   vs   ")
 
-    rnd12 = [[group_a[0], group_b[7]], [group_b[-10], group_a[8]], [group_a[9], group_b[6]],
-             [group_b[5], group_a[-9]], [group_a[-8], group_b[4]], [group_b[3], group_a[-7]],
-             [group_a[-6], group_b[2]], [group_b[1], group_a[-5]], [group_a[-4], group_b[-1]],
-             [group_b[-2], group_a[-3]]]
+    rnd12=[[teams[0], teams[8]], [teams[9], teams[7]], [teams[10], teams[6]],
+    [teams[11], teams[5]], [teams[12], teams[4]], [teams[13], teams[3]],
+    [teams[14], teams[2]], [teams[15], teams[1]], [teams[16], teams[19]], [teams[17], teams[18]]]
     print("----------\nRound 12\n----------")
     for i in rnd12:
         print(i[0][0], i[1][0], sep="   vs   ")
 
-    rnd13 = [[group_a[0], group_b[6]], [group_b[-10], group_a[7]], [group_a[8], group_b[5]],
-             [group_b[4], group_a[9]], [group_a[-9], group_b[3]], [group_b[2], group_a[-8]],
-             [group_a[-7], group_b[1]], [group_b[-1], group_a[-6]], [group_a[-5], group_b[-2]],
-             [group_b[-3], group_a[-4]]]
+    rnd13=[[teams[0], teams[7]], [teams[8], teams[6]], [teams[9], teams[5]],
+    [teams[10], teams[4]], [teams[11], teams[3]], [teams[12], teams[2]],
+    [teams[13], teams[1]], [teams[14], teams[19]], [teams[15], teams[18]], [teams[16], teams[17]]]
     print("----------\nRound 13\n----------")
     for i in rnd13:
         print(i[0][0], i[1][0], sep="   vs   ")
 
-    rnd14 = [[group_a[0], group_b[5]], [group_b[-10], group_a[6]], [group_a[7], group_b[4]],
-             [group_b[3], group_a[8]], [group_a[9], group_b[2]], [group_b[1], group_a[-9]],
-             [group_a[-8], group_b[-1]], [group_b[-2], group_a[-7]], [group_a[-6], group_b[-3]],
-             [group_b[-4], group_a[-5]]]
+    rnd14=[[teams[0], teams[6]], [teams[7], teams[5]], [teams[8], teams[4]],
+    [teams[9], teams[3]], [teams[10], teams[2]], [teams[11], teams[1]],
+    [teams[12], teams[19]], [teams[13], teams[18]], [teams[14], teams[17]], [teams[15], teams[16]]]
     print("----------\nRound 14\n----------")
     for i in rnd14:
         print(i[0][0], i[1][0], sep="   vs   ")
 
-    rnd15 = [[group_a[0], group_b[4]], [group_b[-10], group_a[5]], [group_a[6], group_b[3]],
-             [group_b[2], group_a[7]], [group_a[8], group_b[1]], [group_b[-1], group_a[9]],
-             [group_a[-9], group_b[-2]], [group_b[-3], group_a[-8]], [group_a[-7], group_b[-4]],
-             [group_b[-5], group_a[-6]]]
+    rnd15=[[teams[0], teams[5]], [teams[6], teams[4]], [teams[7], teams[3]],
+    [teams[8], teams[2]], [teams[9], teams[1]], [teams[10], teams[19]],
+    [teams[11], teams[18]], [teams[12], teams[17]], [teams[13], teams[16]], [teams[14], teams[15]]]
     print("----------\nRound 15\n----------")
     for i in rnd15:
         print(i[0][0], i[1][0], sep="   vs   ")
 
-    rnd16 = [[group_a[0], group_b[3]], [group_b[-10], group_a[6]], [group_a[7], group_b[2]],
-             [group_b[1], group_a[8]], [group_a[9], group_b[-1]], [group_b[-2], group_a[-9]],
-             [group_a[-8], group_b[-3]], [group_b[-4], group_a[-7]], [group_a[-6], group_b[-5]],
-             [group_b[-6], group_a[-5]]]
+    rnd16=[[teams[0], teams[4]], [teams[5], teams[3]], [teams[6], teams[2]],
+    [teams[7], teams[1]], [teams[8], teams[19]], [teams[9], teams[18]],
+    [teams[10], teams[17]], [teams[11], teams[16]], [teams[12], teams[15]], [teams[13], teams[14]]]
     print("----------\nRound 16\n----------")
     for i in rnd16:
         print(i[0][0], i[1][0], sep="   vs   ")
 
-    rnd17 = [[group_a[0], group_b[2]], [group_b[-10], group_a[7]], [group_a[8], group_b[1]],
-             [group_b[-1], group_a[9]], [group_a[-9], group_b[-2]], [group_b[-3], group_a[-8]],
-             [group_a[-7], group_b[-4]], [group_b[-5], group_a[-6]], [group_a[-5], group_b[-6]],
-             [group_b[-7], group_a[-4]]]
+    rnd17=[[teams[0], teams[3]], [teams[4], teams[2]], [teams[5], teams[1]],
+    [teams[6], teams[19]], [teams[7], teams[18]], [teams[8], teams[17]],
+    [teams[9], teams[16]], [teams[10], teams[15]], [teams[11], teams[14]], [teams[12], teams[13]]]
     print("----------\nRound 17\n----------")
     for i in rnd17:
         print(i[0][0], i[1][0], sep="   vs   ")
 
-    rnd18 = [[group_a[0], group_b[1]], [group_b[-10], group_a[8]], [group_a[9], group_b[-1]],
-             [group_b[-2], group_a[-9]], [group_a[-8], group_b[-3]], [group_b[-4], group_a[-7]],
-             [group_a[-6], group_b[-5]], [group_b[-6], group_a[-5]], [group_a[-4], group_b[-7]],
-             [group_b[-8], group_a[-3]]]
+    rnd18=[[teams[0], teams[2]], [teams[3], teams[1]], [teams[4], teams[19]],
+    [teams[5], teams[18]], [teams[6], teams[17]], [teams[7], teams[16]],
+    [teams[8], teams[15]], [teams[9], teams[14]], [teams[10], teams[13]], [teams[11], teams[12]]]
     print("----------\nRound 18\n----------")
     for i in rnd18:
         print(i[0][0], i[1][0], sep="   vs   ")
 
-    rnd19 = [[group_a[0], group_b[-1]], [group_b[-10], group_a[9]], [group_a[-9], group_b[-2]],
-             [group_b[-3], group_a[-8]], [group_a[-7], group_b[-4]], [group_b[-5], group_a[-6]],
-             [group_a[-5], group_b[-6]], [group_b[-7], group_a[-4]], [group_a[-3], group_b[-8]],
-             [group_b[-9], group_a[-2]]]
+    rnd19=[[teams[0], teams[1]], [teams[2], teams[19]], [teams[3], teams[18]],
+    [teams[4], teams[17]], [teams[5], teams[16]], [teams[6], teams[15]],
+    [teams[7], teams[14]], [teams[8], teams[13]], [teams[9], teams[12]], [teams[10], teams[11]]]
     print("----------\nRound 19\n----------")
     for i in rnd19:
         print(i[0][0], i[1][0], sep="   vs   ")
