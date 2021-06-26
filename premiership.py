@@ -1053,7 +1053,11 @@ while game:
 
     #winner on end of the season
     print ("Winner of the season is: ",(teams[0][0]))
-    game=False
+    again=input("Would you like to see next season? y/n: ")
+    if again=="y" or again=="Y":
+        game=True
+    else:
+        game=False
 
 
 
