@@ -29,20 +29,6 @@ score=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1
 
 
 
-#print(random_teams)
-#for i in teams:
- #   print (i[0])
-
-
-#print((random.choice(score)),":",(random.choice(score)))
-
-round=0
-
-season_p1=2021
-season_p2=2022
-season=str(season_p1)+"/"+str(season_p2)
-
-
 #setting fixtures
 def fixtures():
 
@@ -355,9 +341,16 @@ def gf_ga_gd():
 
 
 
+season_p1=2020
+season_p2=2021
+season=str(season_p1)+"/"+str(season_p2)
+
 
 game=True
 while game:
+    season_p1=season_p1+1
+    season_p2 = season_p2 + 1
+    season = str(season_p1) + "/" + str(season_p2)
     round=0
     print ("\nWelcome to",(season), "season\n")
     print ("Fixtures for this season are: ")
