@@ -338,6 +338,17 @@ def gf_ga_gd():
     i[0][7] = i[0][5] - i[0][6]
     i[1][7] = i[1][5] - i[1][6]
 
+#clearing table after season etc.
+def clear_table():
+    for i in teams:
+        i[1] = 0
+        i[2] = 0
+        i[3] = 0
+        i[4] = 0
+        i[5] = 0
+        i[6] = 0
+        i[7] = 0
+        i[8] = 0
 
 
 
@@ -348,6 +359,7 @@ season=str(season_p1)+"/"+str(season_p2)
 
 game=True
 while game:
+    clear_table()
     season_p1=season_p1+1
     season_p2 = season_p2 + 1
     season = str(season_p1) + "/" + str(season_p2)
