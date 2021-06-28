@@ -1097,7 +1097,7 @@ while game:
         teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
         print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], ))
         input("Hit enter to end season")
-        
+
 
 
     #winner on end of the season
