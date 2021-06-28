@@ -369,7 +369,8 @@ while game:
     fixtures()
         #print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], tablefmt="fancy_grid", numalign="center"))
     print("--------------------")
-    input("Hit enter to start the season")
+    full_or_results=input('Type "f" if you want to see whole season or "r" if you want to see just the results: ')
+
 
     #round 1
     round = round + 1
@@ -383,11 +384,12 @@ while game:
         gf_ga_gd()
         print(i[0][0], i[1][0], sep="   vs   ")
         print(score1,":",score2)
-    print("\nTable after round", round)
-    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
-    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"],))
-    input("Hit enter to start next round")
-    print("--------------------")
+    if full_or_results=="f":
+        print("\nTable after round", round)
+        teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+        print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"],))
+        input("Hit enter to start next round")
+        print("--------------------")
 
     #round 2
     round = round + 1
@@ -401,11 +403,12 @@ while game:
         gf_ga_gd()
         print(i[0][0], i[1][0], sep="   vs   ")
         print(score1, ":", score2)
-    print("\nTable after round", round)
-    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
-    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
-    input("Hit enter to start next round")
-    print("--------------------")
+    if full_or_results == "f":
+        print("\nTable after round", round)
+        teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+        print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], ))
+        input("Hit enter to start next round")
+        print("--------------------")
 
     # round 3
     round = round + 1
@@ -419,11 +422,12 @@ while game:
         gf_ga_gd()
         print(i[0][0], i[1][0], sep="   vs   ")
         print(score1, ":", score2)
-    print("\nTable after round", round)
-    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
-    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
-    input("Hit enter to start next round")
-    print("--------------------")
+    if full_or_results == "f":
+        print("\nTable after round", round)
+        teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+        print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], ))
+        input("Hit enter to start next round")
+        print("--------------------")
 
     # round 4
     round = round + 1
@@ -437,11 +441,12 @@ while game:
         gf_ga_gd()
         print(i[0][0], i[1][0], sep="   vs   ")
         print(score1, ":", score2)
-    print("\nTable after round", round)
-    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
-    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
-    input("Hit enter to start next round")
-    print("--------------------")
+    if full_or_results == "f":
+        print("\nTable after round", round)
+        teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+        print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], ))
+        input("Hit enter to start next round")
+        print("--------------------")
 
     # round 5
     round = round + 1
@@ -455,11 +460,12 @@ while game:
         gf_ga_gd()
         print(i[0][0], i[1][0], sep="   vs   ")
         print(score1, ":", score2)
-    print("\nTable after round", round)
-    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
-    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
-    input("Hit enter to start next round")
-    print("--------------------")
+    if full_or_results == "f":
+        print("\nTable after round", round)
+        teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+        print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], ))
+        input("Hit enter to start next round")
+        print("--------------------")
 
     # round 6
     round = round + 1
@@ -473,11 +479,12 @@ while game:
         gf_ga_gd()
         print(i[0][0], i[1][0], sep="   vs   ")
         print(score1, ":", score2)
-    print("\nTable after round", round)
-    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
-    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
-    input("Hit enter to start next round")
-    print("--------------------")
+    if full_or_results == "f":
+        print("\nTable after round", round)
+        teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+        print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], ))
+        input("Hit enter to start next round")
+        print("--------------------")
 
     # round 7
     round = round + 1
@@ -491,11 +498,12 @@ while game:
         gf_ga_gd()
         print(i[0][0], i[1][0], sep="   vs   ")
         print(score1, ":", score2)
-    print("\nTable after round", round)
-    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
-    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
-    input("Hit enter to start next round")
-    print("--------------------")
+    if full_or_results == "f":
+        print("\nTable after round", round)
+        teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+        print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], ))
+        input("Hit enter to start next round")
+        print("--------------------")
 
     # round 8
     round = round + 1
@@ -509,11 +517,12 @@ while game:
         gf_ga_gd()
         print(i[0][0], i[1][0], sep="   vs   ")
         print(score1, ":", score2)
-    print("\nTable after round", round)
-    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
-    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
-    input("Hit enter to start next round")
-    print("--------------------")
+    if full_or_results == "f":
+        print("\nTable after round", round)
+        teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+        print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], ))
+        input("Hit enter to start next round")
+        print("--------------------")
 
     # round 9
     round = round + 1
@@ -527,11 +536,12 @@ while game:
         gf_ga_gd()
         print(i[0][0], i[1][0], sep="   vs   ")
         print(score1, ":", score2)
-    print("\nTable after round", round)
-    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
-    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
-    input("Hit enter to start next round")
-    print("--------------------")
+    if full_or_results == "f":
+        print("\nTable after round", round)
+        teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+        print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], ))
+        input("Hit enter to start next round")
+        print("--------------------")
 
     # round 10
     round = round + 1
@@ -545,11 +555,12 @@ while game:
         gf_ga_gd()
         print(i[0][0], i[1][0], sep="   vs   ")
         print(score1, ":", score2)
-    print("\nTable after round", round)
-    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
-    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
-    input("Hit enter to start next round")
-    print("--------------------")
+    if full_or_results == "f":
+        print("\nTable after round", round)
+        teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+        print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], ))
+        input("Hit enter to start next round")
+        print("--------------------")
 
     # round 11
     round = round + 1
@@ -563,11 +574,12 @@ while game:
         gf_ga_gd()
         print(i[0][0], i[1][0], sep="   vs   ")
         print(score1, ":", score2)
-    print("\nTable after round", round)
-    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
-    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
-    input("Hit enter to start next round")
-    print("--------------------")
+    if full_or_results == "f":
+        print("\nTable after round", round)
+        teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+        print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], ))
+        input("Hit enter to start next round")
+        print("--------------------")
 
     # round 12
     round = round + 1
@@ -581,11 +593,12 @@ while game:
         gf_ga_gd()
         print(i[0][0], i[1][0], sep="   vs   ")
         print(score1, ":", score2)
-    print("\nTable after round", round)
-    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
-    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
-    input("Hit enter to start next round")
-    print("--------------------")
+    if full_or_results == "f":
+        print("\nTable after round", round)
+        teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+        print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], ))
+        input("Hit enter to start next round")
+        print("--------------------")
 
     # round 13
     round = round + 1
@@ -599,11 +612,12 @@ while game:
         gf_ga_gd()
         print(i[0][0], i[1][0], sep="   vs   ")
         print(score1, ":", score2)
-    print("\nTable after round", round)
-    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
-    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
-    input("Hit enter to start next round")
-    print("--------------------")
+    if full_or_results == "f":
+        print("\nTable after round", round)
+        teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+        print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], ))
+        input("Hit enter to start next round")
+        print("--------------------")
 
     # round 14
     round = round + 1
@@ -617,11 +631,12 @@ while game:
         gf_ga_gd()
         print(i[0][0], i[1][0], sep="   vs   ")
         print(score1, ":", score2)
-    print("\nTable after round", round)
-    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
-    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
-    input("Hit enter to start next round")
-    print("--------------------")
+    if full_or_results == "f":
+        print("\nTable after round", round)
+        teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+        print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], ))
+        input("Hit enter to start next round")
+        print("--------------------")
 
     # round 15
     round = round + 1
@@ -635,11 +650,12 @@ while game:
         gf_ga_gd()
         print(i[0][0], i[1][0], sep="   vs   ")
         print(score1, ":", score2)
-    print("\nTable after round", round)
-    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
-    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
-    input("Hit enter to start next round")
-    print("--------------------")
+    if full_or_results == "f":
+        print("\nTable after round", round)
+        teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+        print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], ))
+        input("Hit enter to start next round")
+        print("--------------------")
 
     # round 16
     round = round + 1
@@ -653,11 +669,12 @@ while game:
         gf_ga_gd()
         print(i[0][0], i[1][0], sep="   vs   ")
         print(score1, ":", score2)
-    print("\nTable after round", round)
-    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
-    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
-    input("Hit enter to start next round")
-    print("--------------------")
+    if full_or_results == "f":
+        print("\nTable after round", round)
+        teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+        print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], ))
+        input("Hit enter to start next round")
+        print("--------------------")
 
     # round 17
     round = round + 1
@@ -671,11 +688,12 @@ while game:
         gf_ga_gd()
         print(i[0][0], i[1][0], sep="   vs   ")
         print(score1, ":", score2)
-    print("\nTable after round", round)
-    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
-    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
-    input("Hit enter to start next round")
-    print("--------------------")
+    if full_or_results == "f":
+        print("\nTable after round", round)
+        teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+        print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], ))
+        input("Hit enter to start next round")
+        print("--------------------")
 
     # round 18
     round = round + 1
@@ -689,11 +707,12 @@ while game:
         gf_ga_gd()
         print(i[0][0], i[1][0], sep="   vs   ")
         print(score1, ":", score2)
-    print("\nTable after round", round)
-    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
-    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
-    input("Hit enter to start next round")
-    print("--------------------")
+    if full_or_results == "f":
+        print("\nTable after round", round)
+        teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+        print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], ))
+        input("Hit enter to start next round")
+        print("--------------------")
 
     # round 19
     round = round + 1
@@ -707,11 +726,12 @@ while game:
         gf_ga_gd()
         print(i[0][0], i[1][0], sep="   vs   ")
         print(score1, ":", score2)
-    print("\nTable after round", round)
-    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
-    print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"]))
-    input("Hit enter to start next round")
-    print("--------------------")
+    if full_or_results == "f":
+        print("\nTable after round", round)
+        teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
+        print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], ))
+        input("Hit enter to start next round")
+        print("--------------------")
 
     # round 20
     round = round + 1
