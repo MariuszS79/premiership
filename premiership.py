@@ -1096,11 +1096,12 @@ while game:
         print("\nTable after round", round)
         teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
         print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], ))
-        input("Hit enter to start next round")
-        print("--------------------")
+        input("Hit enter to end season")
+        
 
 
     #winner on end of the season
+    print("\n--------------------")
     print ("Winner of the season", season," is: ",(teams[0][0]))
     if full_or_results=="r":
         print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], ))
