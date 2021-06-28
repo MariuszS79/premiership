@@ -371,7 +371,7 @@ while game:
     print("--------------------")
 
     full_or_results=input('Type "f" if you want to see whole season or "r" if you want to see just the results: ')
-    while full_or_results!="f":
+    while not (full_or_results == "f" or full_or_results == "r"):
         full_or_results = input('Type "f" if you want to see whole season or "r" if you want to see just the results: ')
     full_or_results=full_or_results
 
