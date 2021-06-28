@@ -369,11 +369,12 @@ while game:
     fixtures()
         #print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], tablefmt="fancy_grid", numalign="center"))
     print("--------------------")
-    global full_or_results
-    full_or_results=input('Type "f" if you want to see whole season or "r" if you want to see just the results: ')
-    while full_or_results!="f" or full_or_results!="F" or full_or_results!="r" or full_or_results!="R":
 
+    full_or_results=input('Type "f" if you want to see whole season or "r" if you want to see just the results: ')
+    while full_or_results!="f":
         full_or_results = input('Type "f" if you want to see whole season or "r" if you want to see just the results: ')
+    full_or_results=full_or_results
+
 
 
     #round 1
