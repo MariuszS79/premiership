@@ -1096,7 +1096,7 @@ while game:
 
 
     #winner on end of the season
-    print ("Winner of the season is: ",(teams[0][0]))
+    print ("Winner of the season", season," is: ",(teams[0][0]))
     if full_or_results=="r":
         print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], ))
     again=input("Would you like to see next season? y/n: ")
