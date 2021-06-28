@@ -371,7 +371,9 @@ while game:
     print("--------------------")
     global full_or_results
     full_or_results=input('Type "f" if you want to see whole season or "r" if you want to see just the results: ')
-    
+    while full_or_results!="f" or full_or_results!="F" or full_or_results!="r" or full_or_results!="R":
+
+        full_or_results = input('Type "f" if you want to see whole season or "r" if you want to see just the results: ')
 
 
     #round 1
