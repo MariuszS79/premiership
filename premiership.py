@@ -369,7 +369,9 @@ while game:
     fixtures()
         #print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], tablefmt="fancy_grid", numalign="center"))
     print("--------------------")
+    global full_or_results
     full_or_results=input('Type "f" if you want to see whole season or "r" if you want to see just the results: ')
+    
 
 
     #round 1
