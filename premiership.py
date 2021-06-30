@@ -1,6 +1,7 @@
 from tabulate import tabulate
 import random
 
+#premiership teams
 headers=["Club", "MP", "W", "D", "L", "GF", "GA", "GD", "Pts"]
 arsenal=["Arsenal", 0, 0, 0, 0, 0, 0, 0, 0]
 aston_villa=["Aston Villa", 0, 0, 0, 0, 0, 0, 0, 0]
@@ -24,6 +25,8 @@ west_ham=["West Ham", 0, 0, 0, 0, 0, 0, 0, 0]
 wolves=["Wolves", 0, 0, 0, 0, 0, 0, 0, 0]
 
 teams=[arsenal, aston_villa, brentford, brighton, burnley, chelsea, crystal_palace, everton, leeds_united, leicester_city, liverpool, manchester_city, manchester_united, newcastle_united, norwich_city, southampton, tottenham, watford, west_ham, wolves]
+
+championship = [barnsley, birmingham_city, blackburn_rovers, blackpool, bournemouth, bristol_city, cardiff_city, coventry_city, derby_county, fulham, huddersfield_town, hull_city, luton_town, middlesbrough, millwall, nottingham_forest, peterborough_united, preston_north_end, queens_park_rangers, reading, sheffield_united, stoke_city, swansea_city, west_bromwich_albion]
 
 score=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 7]
 
@@ -1097,7 +1100,7 @@ while game:
         teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
         print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], ))
         input("Hit enter to end season")
-
+        
 
 
     #winner on end of the season
