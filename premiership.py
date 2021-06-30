@@ -28,30 +28,30 @@ teams=[arsenal, aston_villa, brentford, brighton, burnley, chelsea, crystal_pala
 
 
 #championship teams
-barnsley=["Barnsley", 0, 0, 0, 0, 0, 0, 0, 0]]
-birmingham_city=
-blackburn_rovers=
-blackpool=
-bournemouth=
-bristol_city=
-cardiff_city=
-coventry_city=
-derby_county=
-fulham=
-huddersfield_town=
-hull_city=
-luton_town=
-middlesbrough=
-millwall=
-nottingham_forest=
-peterborough_united=
-preston_north_end=
-queens_park_rangers=
-reading=
-sheffield_united=
-stoke_city=
-swansea_city=
-west_bromwich_albion=
+barnsley=["Barnsley", 0, 0, 0, 0, 0, 0, 0, 0]
+birmingham_city=["Birmingham", 0, 0, 0, 0, 0, 0, 0, 0]
+blackburn_rovers=["Birmingham", 0, 0, 0, 0, 0, 0, 0, 0]
+blackpool=["Birmingham", 0, 0, 0, 0, 0, 0, 0, 0]
+bournemouth=["Birmingham", 0, 0, 0, 0, 0, 0, 0, 0]
+bristol_city=["Birmingham", 0, 0, 0, 0, 0, 0, 0, 0]
+cardiff_city=["Birmingham", 0, 0, 0, 0, 0, 0, 0, 0]
+coventry_city=["Birmingham", 0, 0, 0, 0, 0, 0, 0, 0]
+derby_county=["Birmingham", 0, 0, 0, 0, 0, 0, 0, 0]
+fulham=["Birmingham", 0, 0, 0, 0, 0, 0, 0, 0]
+huddersfield_town=["Birmingham", 0, 0, 0, 0, 0, 0, 0, 0]
+hull_city=["Birmingham", 0, 0, 0, 0, 0, 0, 0, 0]
+luton_town=["Birmingham", 0, 0, 0, 0, 0, 0, 0, 0]
+middlesbrough=["Birmingham", 0, 0, 0, 0, 0, 0, 0, 0]
+millwall=["Birmingham", 0, 0, 0, 0, 0, 0, 0, 0]
+nottingham_forest=["Birmingham", 0, 0, 0, 0, 0, 0, 0, 0]
+peterborough_united=["Birmingham", 0, 0, 0, 0, 0, 0, 0, 0]
+preston_north_end=["Birmingham", 0, 0, 0, 0, 0, 0, 0, 0]
+queens_park_rangers=["Birmingham", 0, 0, 0, 0, 0, 0, 0, 0]
+reading=["Birmingham", 0, 0, 0, 0, 0, 0, 0, 0]
+sheffield_united=["Birmingham", 0, 0, 0, 0, 0, 0, 0, 0]
+stoke_city=["Birmingham", 0, 0, 0, 0, 0, 0, 0, 0]
+swansea_city=["Birmingham", 0, 0, 0, 0, 0, 0, 0, 0]
+west_bromwich_albion=["Birmingham", 0, 0, 0, 0, 0, 0, 0, 0]
 
 championship = [barnsley, birmingham_city, blackburn_rovers, blackpool, bournemouth, bristol_city, cardiff_city, coventry_city, derby_county, fulham, huddersfield_town, hull_city, luton_town, middlesbrough, millwall, nottingham_forest, peterborough_united, preston_north_end, queens_park_rangers, reading, sheffield_united, stoke_city, swansea_city, west_bromwich_albion]
 
