@@ -1,5 +1,6 @@
 from tabulate import tabulate
 import random
+from random import sample
 
 #premiership teams
 headers=["Club", "MP", "W", "D", "L", "GF", "GA", "GD", "Pts"]
@@ -1140,4 +1141,7 @@ while game:
         game=True
     else:
         game=False
+
+
+
 
