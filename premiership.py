@@ -56,6 +56,13 @@ west_bromwich_albion=["West Bromwich Albion", 0, 0, 0, 0, 0, 0, 0, 0]
 
 championship = [barnsley, birmingham_city, blackburn_rovers, blackpool, bournemouth, bristol_city, cardiff_city, coventry_city, derby_county, fulham, huddersfield_town, hull_city, luton_town, middlesbrough, millwall, nottingham_forest, peterborough_united, preston_north_end, queens_park_rangers, reading, sheffield_united, stoke_city, swansea_city, west_bromwich_albion]
 
+def promotion():
+  promoted= random.sample(championship, 3)
+  return promoted
+
+
+
+
 score=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 7]
 
 
