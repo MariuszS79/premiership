@@ -1140,12 +1140,14 @@ while game:
     championship.remove(promoted3)
 
     #winner on end of the season
+    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
     print("\n--------------------")
     print ("Winner of the season", season," is: ",(teams[0][0]),"\n")
     print ("Relegated teams: ", teams[17][0],", ", teams[18][0],", ", teams[19][0])
     print ("Promoted teams: ", promoted1[0], ", ", promoted2[0], ", ", promoted3[0],)
     print("\n--------------------")
     if full_or_results=="r":
+        teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
         print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], ))
 
     relegated1=teams.pop(19)
@@ -1165,3 +1167,4 @@ while game:
     else:
         print("\nHave a nice day then ;-)")
         game=False
+
