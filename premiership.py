@@ -1163,5 +1163,5 @@ while game:
     if again=="y" or again=="Y":
         game=True
     else:
+        print("\nHave a nice day then ;-)")
         game=False
-
