@@ -403,9 +403,9 @@ while game:
         #print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], tablefmt="fancy_grid", numalign="center"))
     print("--------------------")
 
-    full_or_results=input('Type "f" if you want to see whole season or "r" if you want to see just the results: ')
+    full_or_results=input("Type \"f\" if you want to see whole season or \"r\" if you want to see just the results: ")
     while not (full_or_results == "f" or full_or_results == "r"):
-        full_or_results = input('Type "f" if you want to see whole season or "r" if you want to see just the results: ')
+        full_or_results = input("Type \"f\" if you want to see whole season or \"r\" if you want to see just the results: ")
     full_or_results=full_or_results
 
 
@@ -1141,7 +1141,7 @@ while game:
 
     #winner on end of the season
     print("\n--------------------")
-    print ("Winner of the season", season," is: ",(teams[0][0]))
+    print ("Winner of the season", season," is: ",(teams[0][0]),"\n")
     print ("Relegated teams: ", teams[17][0],", ", teams[18][0],", ", teams[19][0])
     print ("Promoted teams: ", promoted1[0], ", ", promoted2[0], ", ", promoted3[0],)
     print("\n--------------------")
@@ -1158,7 +1158,7 @@ while game:
     teams.append(promoted2)
     teams.append(promoted3)
 
-  
+    print("--------------------\n")
     again=input("Would you like to see next season? y/n: ")
     if again=="y" or again=="Y":
         game=True
