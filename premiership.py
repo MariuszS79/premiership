@@ -1,7 +1,6 @@
 from tabulate import tabulate
 import random
 
-<<<<<<< HEAD
 # premiership teams
 headers = ["Club", "MP", "W", "D", "L", "GF", "GA", "GD", "Pts"]
 arsenal = ["Arsenal", 0, 0, 0, 0, 0, 0, 0, 0]
@@ -65,70 +64,6 @@ score = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1,
 
 
 # setting fixtures
-=======
-
-#premiership teams
-headers=["Club", "MP", "W", "D", "L", "GF", "GA", "GD", "Pts"]
-arsenal=["Arsenal", 0, 0, 0, 0, 0, 0, 0, 0]
-aston_villa=["Aston Villa", 0, 0, 0, 0, 0, 0, 0, 0]
-brentford=["Brentford", 0, 0, 0, 0, 0, 0, 0, 0]
-brighton=["Brighton", 0, 0, 0, 0, 0, 0, 0, 0]
-burnley=["Burnley", 0, 0, 0, 0, 0, 0, 0, 0]
-chelsea=["Chelsea", 0, 0, 0, 0, 0, 0, 0, 0]
-crystal_palace=["Crystal Palace", 0, 0, 0, 0, 0, 0, 0, 0]
-everton=["Everton", 0, 0, 0, 0, 0, 0, 0, 0]
-leeds_united=["Leeds United", 0, 0, 0, 0, 0, 0, 0, 0]
-leicester_city=["Leicester City", 0, 0, 0, 0, 0, 0, 0, 0]
-liverpool=["Liverpool", 0, 0, 0, 0, 0, 0, 0, 0]
-manchester_city=["Manchester City", 0, 0, 0, 0, 0, 0, 0, 0]
-manchester_united=["Manchester United", 0, 0, 0, 0, 0, 0, 0, 0]
-newcastle_united=["Newcastle United", 0, 0, 0, 0, 0, 0, 0, 0]
-norwich_city=["Norwich City", 0, 0, 0, 0, 0, 0, 0, 0]
-southampton=["Southampton", 0, 0, 0, 0, 0, 0, 0, 0]
-tottenham=["Tottenham", 0, 0, 0, 0, 0, 0, 0, 0]
-watford=["Watford", 0, 0, 0, 0, 0, 0, 0, 0]
-west_ham=["West Ham", 0, 0, 0, 0, 0, 0, 0, 0]
-wolves=["Wolves", 0, 0, 0, 0, 0, 0, 0, 0]
-
-teams=[arsenal, aston_villa, brentford, brighton, burnley, chelsea, crystal_palace, everton, leeds_united, leicester_city, liverpool, manchester_city, manchester_united, newcastle_united, norwich_city, southampton, tottenham, watford, west_ham, wolves]
-
-
-#championship teams
-barnsley=["Barnsley", 0, 0, 0, 0, 0, 0, 0, 0]
-birmingham_city=["Birmingham City", 0, 0, 0, 0, 0, 0, 0, 0]
-blackburn_rovers=["Blackburn Rovers", 0, 0, 0, 0, 0, 0, 0, 0]
-blackpool=["Blackpool", 0, 0, 0, 0, 0, 0, 0, 0]
-bournemouth=["Bournemouth", 0, 0, 0, 0, 0, 0, 0, 0]
-bristol_city=["Bristol City", 0, 0, 0, 0, 0, 0, 0, 0]
-cardiff_city=["Cardiff City", 0, 0, 0, 0, 0, 0, 0, 0]
-coventry_city=["Coventry City", 0, 0, 0, 0, 0, 0, 0, 0]
-derby_county=["Derby County", 0, 0, 0, 0, 0, 0, 0, 0]
-fulham=["Fulham", 0, 0, 0, 0, 0, 0, 0, 0]
-huddersfield_town=["Huddersfield Town", 0, 0, 0, 0, 0, 0, 0, 0]
-hull_city=["Hull City", 0, 0, 0, 0, 0, 0, 0, 0]
-luton_town=["Luton Town", 0, 0, 0, 0, 0, 0, 0, 0]
-middlesbrough=["Middlesbrough", 0, 0, 0, 0, 0, 0, 0, 0]
-millwall=["Millwall", 0, 0, 0, 0, 0, 0, 0, 0]
-nottingham_forest=["Nottingham Forest", 0, 0, 0, 0, 0, 0, 0, 0]
-peterborough_united=["Peterborough United", 0, 0, 0, 0, 0, 0, 0, 0]
-preston_north_end=["Preston North End", 0, 0, 0, 0, 0, 0, 0, 0]
-queens_park_rangers=["Queens Park Rangers", 0, 0, 0, 0, 0, 0, 0, 0]
-reading=["Reading", 0, 0, 0, 0, 0, 0, 0, 0]
-sheffield_united=["Sheffield United", 0, 0, 0, 0, 0, 0, 0, 0]
-stoke_city=["Birmingham", 0, 0, 0, 0, 0, 0, 0, 0]
-swansea_city=["Swansea City", 0, 0, 0, 0, 0, 0, 0, 0]
-west_bromwich_albion=["West Bromwich Albion", 0, 0, 0, 0, 0, 0, 0, 0]
-
-championship = [barnsley, birmingham_city, blackburn_rovers, blackpool, bournemouth, bristol_city, cardiff_city, coventry_city, derby_county, fulham, huddersfield_town, hull_city, luton_town, middlesbrough, millwall, nottingham_forest, peterborough_united, preston_north_end, queens_park_rangers, reading, sheffield_united, stoke_city, swansea_city, west_bromwich_albion]
-
-
-
-score=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 7]
-
-
-
-#setting fixtures
->>>>>>> 6ab4d68dc44218f1b355e096bdb013b738600d6c
 def fixtures():
     global rnd1
     global rnd2
@@ -469,18 +404,12 @@ while game:
     # print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], tablefmt="fancy_grid", numalign="center"))
     print("--------------------")
 
-<<<<<<< HEAD
     full_or_results = input("Type \"f\" if you want to see whole season or \"r\" if you want to see just the results: ")
     while not (full_or_results == "f" or full_or_results == "r"):
         full_or_results = input(
             "Type \"f\" if you want to see whole season or \"r\" if you want to see just the results: ")
     full_or_results = full_or_results
-=======
-    full_or_results=input("Type \"f\" if you want to see whole season or \"r\" if you want to see just the results: ")
-    while not (full_or_results == "f" or full_or_results == "r"):
-        full_or_results = input("Type \"f\" if you want to see whole season or \"r\" if you want to see just the results: ")
-    full_or_results=full_or_results
->>>>>>> 6ab4d68dc44218f1b355e096bdb013b738600d6c
+
 
     # round 1
     round = round + 1
@@ -1202,7 +1131,7 @@ while game:
         teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
         print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], ))
         input("Hit enter to end season")
-<<<<<<< HEAD
+
 
     promoted1 = random.choice(championship)
     championship.remove(promoted1)
@@ -1227,9 +1156,7 @@ while game:
     relegated2 = teams.pop(18)
     championship.append(relegated2)
     relegated3 = teams.pop(17)
-=======
         
-    
     promoted1= random.choice(championship)
     championship.remove(promoted1)
     promoted2= random.choice(championship)
@@ -1237,37 +1164,14 @@ while game:
     promoted3= random.choice(championship)
     championship.remove(promoted3)
 
-    #winner on end of the season
-    teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
-    print("\n--------------------")
-    print ("Winner of the season", season," is: ",(teams[0][0]),"\n")
-    print ("Relegated teams: ", teams[17][0],", ", teams[18][0],", ", teams[19][0])
-    print ("Promoted teams: ", promoted1[0], ", ", promoted2[0], ", ", promoted3[0],)
-    print("\n--------------------")
-    if full_or_results=="r":
-        teams.sort(key=lambda team: (team[8], team[7]), reverse=True)
-        print(tabulate(teams, headers=["Club", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"], ))
-
-    relegated1=teams.pop(19)
-    championship.append(relegated1)
-    relegated2=teams.pop(18)
-    championship.append(relegated2)
-    relegated3=teams.pop(17)
->>>>>>> 6ab4d68dc44218f1b355e096bdb013b738600d6c
+ 
     championship.append(relegated3)
     teams.append(promoted1)
     teams.append(promoted2)
     teams.append(promoted3)
 
     print("--------------------\n")
-<<<<<<< HEAD
-    again = input("Would you like to see next season? y/n: ")
-    if again == "y" or again == "Y":
-        game = True
-    else:
-        print("\nHave a nice day then ;-)")
-        game = False
-=======
+
     again=input("Would you like to see next season? y/n: ")
     if again=="y" or again=="Y":
         game=True
@@ -1275,4 +1179,4 @@ while game:
         print("\nHave a nice day then ;-)")
         game=False
 
->>>>>>> 6ab4d68dc44218f1b355e096bdb013b738600d6c
+
